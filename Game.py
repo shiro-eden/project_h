@@ -20,20 +20,25 @@ class Cube:
         self.x = x
         self.y = y
         self.side = side
-        self.image = pygame.Surface((50, 50))
+        self.image_off = pygame.Surface((30, 30))
+        self.image_on = pygame.Surface((30, 30))
+        self.image_on.fill((255, 255, 255))
         self.active = False
 
-    def render(self):
+    def render(self, l_mouse_click):
         mouse = pygame.mouse.get_pos()
         click = pygame.mouse.get_pressed()
 
         if self.x < mouse[0] < self.x + self.side and self.y < mouse[1] < self.y + self.side:
-            if click[0]:
+            if l_mouse_click:
                 self.select()
                 self.active = not self.active
         else:
             pass
-        display.blit(self.image, (self.x, self.y))
+        if self.active:
+            display.blit(self.image_on, (self.x, self.y))
+        else:
+            display.blit(self.image_off, (self.x, self.y))
 
     def select(self):
         pass
@@ -56,11 +61,11 @@ class Character:
 
         self.inventory = Inventory(name)
 
-    def render(self):
+    def render(self, l_mouse_click):
         display.blit(self.image, (self.x, self.y))
 
         for cube in self.cubes:
-            cube.render()
+            cube.render(l_mouse_click)
             if cube.is_active():
                 self.inventory.render()
 
@@ -78,11 +83,11 @@ class Game:
     def handle_keys(self):
         pass
 
-    def render(self):
+    def render(self, l_mouse_click):
         display.fill((0, 0, 0))
         display.blit(background, (0, 0))
 
-        self.character.render()
+        self.character.render(l_mouse_click)
 
     def end_game(self):  # функция для отслеживания окончания карты
         pass

@@ -14,8 +14,6 @@ from Settings import Settings, load_settings
 
 # загрузка настроек, карт
 settings_values = load_settings()
-maps = import_maps()
-
 closed = False
 
 
@@ -236,10 +234,14 @@ def play_map(map):
     screen = Game(map)
     game = True
     while game:
+        l_mouse_click = False
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 closed = True
                 return
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if event.button == 1:
+                    l_mouse_click = True
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:  # обработка выхода в меню паузы
                     objects = [(stage_image, key0_image, key1_image),
@@ -260,7 +262,7 @@ def play_map(map):
                         return select_map()
                 else:
                     screen.handle_keys()  # обработка нажатий на клавиши
-        screen.render()
+        screen.render(l_mouse_click)
         if screen.end_game():
             game = False
         pygame.display.flip()

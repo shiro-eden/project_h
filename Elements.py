@@ -3,8 +3,8 @@ from GameParameter import clock, fps, display
 from GameEffects import drawing_text, load_image, AnimatedSprite
 
 
-MAX_EL_HEIGHT = 300
-BASE_EL_HEIGHT = 200
+MAX_EL_HEIGHT = 400
+BASE_EL_HEIGHT = 600
 WIDTH_INVENTORY = 900
 WIDTH_ELEMENTS, HEIGHT_ELEMENTS = 100, 400
 X_INVENTORY = 110
@@ -32,8 +32,8 @@ class Inventory:
 
 class ChemicalElements:  # hos - high oxidation state или высшая степень окисления
     def __init__(self, image, name, period, group, nc_number, nc_mass, met=False, hos=False):
-        self.image = pygame.Surface((50, 50))  # = load_image(image)
-        self.x, self.y = 0, 0
+        self.image = pygame.Surface((150, 400))  # = load_image(image)
+        self.x, self.y = 150, 800
         self.width, self.height = WIDTH_ELEMENTS, HEIGHT_ELEMENTS
 
         self.name = name
@@ -60,9 +60,9 @@ class ChemicalElements:  # hos - high oxidation state или высшая сте
 
         if self.x < mouse[0] < self.x + self.width and self.y < mouse[1] < self.y + self.height:
             if self.y < MAX_EL_HEIGHT:
-                self.y += 5
+                self.y += 15
             if click[0]:
                 self.select()
         elif self.y > BASE_EL_HEIGHT:
-            self.y -= 5
+            self.y -= 15
         display.blit(self.image, (self.x, self.y))
