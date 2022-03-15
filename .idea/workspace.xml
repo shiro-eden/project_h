@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31ad2b20-5b0b-43fc-a283-f098fbd3c46b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musor.py" beforeDir="false" afterPath="$PROJECT_DIR$/musor.py" afterDir="false" />
-    </list>
+    <list default="true" id="31ad2b20-5b0b-43fc-a283-f098fbd3c46b" name="Changes" comment="Грид контейнер для кубов и карт" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647364613565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Грид контейнер для кубов и карт">
+      <created>1647365129468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647365129468</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

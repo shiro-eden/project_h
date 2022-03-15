@@ -93,7 +93,7 @@ class PlayerCharacter(Character):
 
 class Game:
     def __init__(self, map):
-        self.character = PlayerCharacter(800, 350, 3)
+        self.character = PlayerCharacter(800, 350, 5)
 
     def handle_keys(self):
         pass

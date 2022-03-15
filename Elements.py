@@ -15,7 +15,7 @@ class Inventory:
         self.name_character = name_character
         self.inventory = []
         self.max_size = max_size
-        for i in range(1):
+        for i in range(7):
             self.add_element(ChemicalElements(None, "Натрий", 3, 1, 11, 23, True))
 
     def add_element(self, element):
