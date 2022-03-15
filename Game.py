@@ -14,14 +14,17 @@ key1_image = load_image('skin/key1.png')  # клавиши с предписко
 stage_image = load_image('skin/stage.png')
 background = load_image('Hod.png')
 
+CUBE_SIDE = 40
+
 
 class Cube:
-    def __init__(self, x, y, side=100):
+    def __init__(self, x, y, number, count_cubes):
         self.x = x
-        self.y = y
-        self.side = side
-        self.image_off = pygame.Surface((30, 30))
-        self.image_on = pygame.Surface((30, 30))
+        self.y = y - CUBE_SIDE - 10
+        self.number = number
+        self.side = CUBE_SIDE
+        self.image_off = pygame.Surface((self.side, self.side))
+        self.image_on = pygame.Surface((self.side, self.side))
         self.image_on.fill((255, 255, 255))
         self.active = False
 
@@ -46,29 +49,41 @@ class Cube:
     def is_active(self):
         return self.active
 
+    def deactivate(self):
+        self.active = False
 
 class Character:
     def __init__(self, name, x, y, count_cubes=1, image=None):
-        print(count_cubes)
         self.name = name
-        self.image = pygame.Surface((25, 70))
-        self.image.fill((255, 255, 255))
-        self.rect = self.image.get_rect()
+        self.image = load_image('Binah.png')
+        self.width, self.height = self.image.get_rect().size
 
         self.x, self.y = x, y
         self.count_cubes = count_cubes
-        self.cubes = [Cube(x - 100 * (count_cubes // 2 + i), y) for i in range(count_cubes)]
+        if count_cubes % 2 == 0:
+            x = self.x + self.width // 2
+        else:
+            x = self.x + self.width // 2 - CUBE_SIDE // 2
+        self.cubes = [Cube(x - (count_cubes // 2 - i) * (CUBE_SIDE + 5), y, i, count_cubes) for i in range(count_cubes)]
+        self.has_active_cube = False
 
         self.inventory = Inventory(name)
 
     def render(self, l_mouse_click):
         display.blit(self.image, (self.x, self.y))
 
-        for cube in self.cubes:
+        for ind, cube in enumerate(self.cubes):
             cube.render(l_mouse_click)
             if cube.is_active():
                 self.inventory.render()
+                if self.has_active_cube:
+                    self.deactivate_cubes(ind)
+                self.has_active_cube = True
 
+    def deactivate_cubes(self, index):
+        for ind, cube in enumerate(self.cubes):
+            if ind != index:
+                cube.deactivate()
 
 class PlayerCharacter(Character):
     def __init__(self, x, y, count_cubes=1, image=None):
@@ -78,7 +93,7 @@ class PlayerCharacter(Character):
 
 class Game:
     def __init__(self, map):
-        self.character = PlayerCharacter(800, 400)
+        self.character = PlayerCharacter(800, 350, 3)
 
     def handle_keys(self):
         pass
