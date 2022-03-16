@@ -7,7 +7,7 @@ from GameEffects import AnimationTransition, load_image
 from StartMenu import StartMenu  # импорты экранов
 from SelectMenu import SelectMenu
 # from CharacterMenu import CharacterMenu
-from Game import Game, stage_image, key0_image, key1_image
+from Game import Game
 from PauseMenu import PauseMenu
 from ResultScreen import ResultScreen
 from Settings import Settings, load_settings
@@ -244,12 +244,8 @@ def play_map(map):
                     l_mouse_click = True
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:  # обработка выхода в меню паузы
-                    objects = [(stage_image, key0_image, key1_image),
-                               (screen.notes_active, screen.notes_near),
-                               (screen.sliders_active, screen.sliders_near, screen.sliders_pressed,
-                                screen.sliders_failed, screen.sliders_pressed_ms)]
                     screen.pause_music()
-                    result = pause(objects, screen.map.background)
+                    result = pause(None, screen.map.background)
                     if result == -2:
                         return
                     elif result == 0:

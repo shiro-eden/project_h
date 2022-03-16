@@ -5,16 +5,13 @@ from Button import Button
 
 st_x = 350
 
-background_image = load_image('pause_background.png')
+background_image = load_image('background/pause_background.png')
 
-continue_button_image = (load_image('pause_continue_0.png'),
-                         load_image('pause_continue_1.png'))
+continue_button_image = [load_image(f'ui/buttons/pause_continue_button_{i}.png') for i in range(2)]
 
-restart_button_image = (load_image('pause_restart_0.png'),
-                        load_image('pause_restart_1.png'))
+restart_button_image = [load_image(f'ui/buttons/pause_restart_button_{i}.png') for i in range(2)]
 
-back_button_image = (load_image('pause_back_0.png'),
-                     load_image('pause_back_1.png'))
+back_button_image = [load_image(f'ui/buttons/pause_back_button_{i}.png') for i in range(2)]
 
 
 class PauseMenu:

@@ -4,7 +4,240 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31ad2b20-5b0b-43fc-a283-f098fbd3c46b" name="Changes" comment="Грид контейнер для кубов и карт" />
+    <list default="true" id="31ad2b20-5b0b-43fc-a283-f098fbd3c46b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PROJECT H.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PROJECT H.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PauseMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/PauseMenu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResultScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/ResultScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/SelectMenu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartMenu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Hod.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_activate/ability_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_activate/ability_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_activate/ability_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_activate/ability_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_activate/ability_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_activate/ability_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_activate/ability_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ability_bar/ability_bar_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/back_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/background_for_load.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/changer_button_down_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/changer_button_down_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/changer_button_up_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/changer_button_up_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/check_box_button_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/check_box_button_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/chr_button_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/chr_button_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/chr_button_shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/confirm_btn_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/confirm_btn_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/confirm_button_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/confirm_button_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/confirm_button_shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/equalizer/equalizer_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/exit_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/exit_button_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/exit_button_shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_ability_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_ability_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_ability_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_ability_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_ability_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/flandre/flandre_ability_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/glow_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/glow_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/left_button_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/left_button_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/left_button_shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/marisa/marisa_ability_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/menu+.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/menu_back+.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/menu_back_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/menu_back_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/menu_back_shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/menu_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/music_volume_text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pause_back_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pause_back_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pause_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pause_continue_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pause_continue_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pause_restart_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pause_restart_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/play_button_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/play_button_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/play_button_shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/changer.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/changer_button_down_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/changer_button_down_1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/changer_button_up_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/changer_button_up_1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/chr_button_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/chr_button_1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/chr_button_2.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/chr_button_3.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/confirm_btn_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/confirm_btn_1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/exit_button.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/exit_button_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/exit_button_1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/exit_button_active.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/glow_left.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/glow_right.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/hit0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/hit100.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/hit200.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/hit300.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/hit300g.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/hit50.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/menu+.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/menu_back+.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/menu_back_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/pause_restart_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/play_button_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/play_button_1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/result_background.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/rizumu.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/select_menu_rect.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/select_menu_rect_active.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/settings_button_0.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/psd/settings_button_1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/record_rect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/reimu/reimu_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/remilia/remilia_ability_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/result_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/right_button_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/right_button_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/right_button_shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/rizumu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/sakuya/sakuya_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/sakuya/sakuya_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/sakuya/sakuya_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/sakuya/sakuya_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/sakuya/sakuya_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/sakuya/sakuya_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/sakuya/sakuya_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/scroll_speed_text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/select_menu_rect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/select_menu_rect_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/settings_button_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/settings_button_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/hit0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/hit100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/hit200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/hit300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/hit300g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/hit50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/key0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/key0d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/key1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/key1d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/lighting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/note0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/note0s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/note1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/note1s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/rank_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/rank_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/rank_C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/rank_D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/rank_S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/rank_SH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/rank_SS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/rank_SSH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/settings_button_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/stage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/skin/stage_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/start_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/start_button_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/start_button_shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/timer_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/timer_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/timer_3.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,11 +251,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -86,9 +314,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\USER\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
@@ -159,21 +387,6 @@
       <option name="presentableId" value="Default" />
       <updated>1645904584153</updated>
     </task>
-    <task id="LOCAL-00001" summary="Грид контейнер для кубов и карт">
-      <created>1647364613565</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1647364613565</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Грид контейнер для кубов и карт">
-      <created>1647365129468</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1647365129468</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,51 +394,22 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="HEAD" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/master" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Грид контейнер для кубов и карт" />
-    <option name="LAST_COMMIT_MESSAGE" value="Грид контейнер для кубов и карт" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GameEffects.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

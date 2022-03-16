@@ -5,23 +5,21 @@ from Button import Button
 from GameEffects import drawing_text, load_image
 from Settings import load_settings
 
-exit_button_image = [load_image(f'menu_back_{i}.png') for i in range(2)]
-chr_button_image = [load_image(f'chr_button_{i}.png') for i in range(2)]
-play_button_image = (load_image('play_button_0.png'),
-                     load_image('play_button_1.png'))
-settings_button_image = [load_image(f'settings_button_{i}.png') for i in range(2)]
-song_rect = load_image('select_menu_rect.png')
-song_rect_active = load_image('select_menu_rect_active.png')
-menu_back_plus = load_image('menu_back+.png')
-menu_plus = load_image('menu+.png')
-back_mask = load_image('back_mask.png')
-records_rect = load_image('record_rect.png')
+exit_button_image = [load_image(f'ui/buttons/menu_back_button_{i}.png') for i in range(2)]
+chr_button_image = [load_image(f'ui/buttons/chr_button_{i}.png') for i in range(2)]
+play_button_image = [load_image(f'ui/buttons/play_button_{i}.png') for i in range(2)]
+settings_button_image = [load_image(f'ui/buttons/settings_button_{i}.png') for i in range(2)]
+song_rect = load_image('ui/decor/select_menu_rect.png')
+song_rect_active = load_image('ui/decor/select_menu_rect_active.png')
+menu_back_plus = load_image('ui/decor/menu_down_rect.png')
+menu_plus = load_image('ui/decor/menu_up_rect.png')
+back_mask = load_image('backgrounds/mask_background.png')
 settings_values = load_settings()
-glow_left = load_image('glow_left.png')
-glow_right = load_image('glow_right.png')
+glow_left = load_image('ui/decor/glow_left.png')
+glow_right = load_image('ui/decor/glow_right.png')
 shift_v = 300
 
-background_image = load_image('menu_background.png')
+background_image = load_image('backgrounds/menu_background.png')
 
 
 class SelectMenu:

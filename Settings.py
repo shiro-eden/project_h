@@ -4,13 +4,13 @@ from GameEffects import drawing_text, load_image
 from Button import Button
 
 # загрузка изображений
-background = load_image('menu_background.png')
-exit_button_image = [load_image(f'menu_back_{i}.png') for i in range(2)]
-changer_btn_up_image = [load_image(f'changer_button_up_{i}.png') for i in range(2)]
-changer_btn_down_image = [load_image(f'changer_button_down_{i}.png') for i in range(2)]
-music_volume_image = load_image('music_volume_text.png')  # изображение надписи 'music volume'
-scroll_speed_image = load_image('scroll_speed_text.png')  # изображение надписи 'scroll speed'
-confirm_btn_image = [load_image(f'confirm_btn_{i}.png') for i in range(2)]
+background = load_image('backgrounds/menu_background.png')
+exit_button_image = [load_image(f'backgrounds/menu_back_button_{i}.png') for i in range(2)]
+changer_btn_up_image = [load_image(f'ui/buttons/changer_button_up_{i}.png') for i in range(2)]
+changer_btn_down_image = [load_image(f'ui/buttons/changer_button_down_{i}.png') for i in range(2)]
+music_volume_image = load_image('ui/text/music_volume_text.png')  # изображение надписи 'music volume'
+scroll_speed_image = load_image('ui/text/scroll_speed_text.png')  # изображение надписи 'scroll speed'
+confirm_btn_image = [load_image(f'ui/buttons/confirm_button_{i}.png') for i in range(2)]
 
 
 def load_settings():  # функия получения настроек пользователя

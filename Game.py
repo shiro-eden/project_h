@@ -6,12 +6,8 @@ from Settings import load_settings
 
 from Elements import ChemicalElements, Inventory
 
-# загрузка изображений клавиш(без 'd' на конце - клавиши на 1 и 4 линиях, с 'd' - клавиши на 2 и 3)
-key0_image = load_image('skin/key0.png')  # клавиши с предпиской '0' - не нажатая клавиша
-key1_image = load_image('skin/key1.png')  # клавиши с предпиской '1' - нажатая клавиша)
 
 # загрузка изображений игрового поля
-stage_image = load_image('skin/stage.png')
 background = load_image('Hod.png')
 
 CUBE_SIDE = 40
