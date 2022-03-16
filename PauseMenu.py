@@ -5,7 +5,7 @@ from Button import Button
 
 st_x = 350
 
-background_image = load_image('background/pause_background.png')
+background_image = load_image('backgrounds/pause_background.png')
 
 continue_button_image = [load_image(f'ui/buttons/pause_continue_button_{i}.png') for i in range(2)]
 

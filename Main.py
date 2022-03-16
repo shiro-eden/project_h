@@ -49,8 +49,8 @@ def start_menu():
         if transition.get_transition():  # отображение перехода между меню
             if not transition.background:
                 # сохранение изображения на экране для быстрой отрисовки
-                pygame.image.save(display, 'image/background_for_load.png')
-                transition.background = load_image('background_for_load.png')
+                pygame.image.save(display, 'image/backgrounds/background_for_load.png')
+                transition.background = load_image('backgrounds/background_for_load.png')
             transition.render()
         else:
             screen.render()
@@ -96,8 +96,8 @@ def select_map():
 
         if transition.get_transition():  # отображение перехода
             if not transition.background:
-                pygame.image.save(display, 'image/background_for_load.png')
-                transition.background = load_image('background_for_load.png')
+                pygame.image.save(display, 'image/backgrounds/background_for_load.png')
+                transition.background = load_image('backgrounds/background_for_load.png')
             transition.render()
         else:
             screen.render()
@@ -154,8 +154,8 @@ def settings():
                 return
         if transition.get_transition():  # отображение перехода
             if not transition.background:
-                pygame.image.save(display, 'image/background_for_load.png')
-                transition.background = load_image('background_for_load.png')
+                pygame.image.save(display, 'image/backgrounds/background_for_load.png')
+                transition.background = load_image('backgrounds/background_for_load.png')
             transition.render()
         else:
             screen.render()
@@ -332,8 +332,8 @@ def result_game(count_combo, score, marks, accuracy, map):  # экран с ре
                 game = False
         if transition.get_transition():  # отрисовка перехода
             if not transition.background:
-                pygame.image.save(display, 'image/background_for_load.png')
-                transition.background = load_image('background_for_load.png')
+                pygame.image.save(display, 'image/backgrounds/background_for_load.png')
+                transition.background = load_image('backgrounds/background_for_load.png')
             transition.render()
         else:
             screen.render()

@@ -5,7 +5,7 @@ from Button import Button
 
 # загрузка изображений
 background = load_image('backgrounds/menu_background.png')
-exit_button_image = [load_image(f'backgrounds/menu_back_button_{i}.png') for i in range(2)]
+exit_button_image = [load_image(f'ui/buttons/menu_back_button_{i}.png') for i in range(2)]
 changer_btn_up_image = [load_image(f'ui/buttons/changer_button_up_{i}.png') for i in range(2)]
 changer_btn_down_image = [load_image(f'ui/buttons/changer_button_down_{i}.png') for i in range(2)]
 music_volume_image = load_image('ui/text/music_volume_text.png')  # изображение надписи 'music volume'

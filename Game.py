@@ -8,7 +8,7 @@ from Elements import ChemicalElements, Inventory
 
 
 # загрузка изображений игрового поля
-background = load_image('Hod.png')
+background = load_image('backgrounds/Hod.png')
 
 CUBE_SIDE = 40
 

@@ -7,9 +7,9 @@ from GameEffects import drawing_text, load_image, load_music, AnimatedSprite
 exit_button_image = (load_image('ui/buttons/exit_button.png'),
                      load_image('ui/buttons/exit_button_active.png'))
 
-background_image = load_image('background/menu_background.png')
+background_image = load_image('backgrounds/menu_background.png')
 
-rizumu_image = load_image('background/rizumu.png')
+rizumu_image = load_image('backgrounds/rizumu.png')
 
 
 class StartMenu:  # класс стартового меню
