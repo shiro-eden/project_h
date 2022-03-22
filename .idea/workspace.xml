@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31ad2b20-5b0b-43fc-a283-f098fbd3c46b" name="Changes" comment="">
+    <list default="true" id="31ad2b20-5b0b-43fc-a283-f098fbd3c46b" name="Changes" comment="Завершение реструкторизации файлов системы">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PauseMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/PauseMenu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartMenu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/backgrounds/background_for_load.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/backgrounds/background_for_load.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ui/buttons/confirm_buttonn_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/ui/buttons/confirm_button_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user_settings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musor.py" beforeDir="false" afterPath="$PROJECT_DIR$/musor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <recent name="C:\Users\leggo\PycharmProjects\PROJECT H" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.musor">
     <configuration name="Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PROJECT H" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,8 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main (1)" />
         <item itemvalue="Python.musor" />
+        <item itemvalue="Python.Main (1)" />
         <item itemvalue="Python.Game" />
       </list>
     </recent_temporary>
@@ -163,6 +159,14 @@
       <option name="presentableId" value="Default" />
       <updated>1645904584153</updated>
     </task>
+    <task id="LOCAL-00001" summary="Завершение реструкторизации файлов системы">
+      <created>1647444169604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647444169604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +179,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Завершение реструкторизации файлов системы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Завершение реструкторизации файлов системы" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

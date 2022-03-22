@@ -49,9 +49,9 @@ class Cube:
         self.active = False
 
 class Character:
-    def __init__(self, name, x, y, count_cubes=1, image=None):
+    def __init__(self, name, x, y, count_cubes=1, image=pygame.Surface((50, 50))):
         self.name = name
-        self.image = load_image('Binah.png')
+        self.image = image
         self.width, self.height = self.image.get_rect().size
 
         self.x, self.y = x, y
@@ -83,13 +83,20 @@ class Character:
 
 class PlayerCharacter(Character):
     def __init__(self, x, y, count_cubes=1, image=None):
-        super().__init__(self, x, y, count_cubes, image)
+        super().__init__(self, x, y, count_cubes, load_image('Binah.png'))
+        pass
+
+
+class EnemyCharacter(Character):
+    def __init__(self, x, y, count_cubes=1, image=None):
+        super().__init__(self, x, y, count_cubes, load_image('Xiao.png'))
         pass
 
 
 class Game:
     def __init__(self, map):
         self.character = PlayerCharacter(800, 350, 5)
+        self.enemy = EnemyCharacter(300, 350, 3)
 
     def handle_keys(self):
         pass
@@ -99,6 +106,7 @@ class Game:
         display.blit(background, (0, 0))
 
         self.character.render(l_mouse_click)
+        self.enemy.render(l_mouse_click)
 
     def end_game(self):  # функция для отслеживания окончания карты
         pass
