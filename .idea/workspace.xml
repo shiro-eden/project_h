@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31ad2b20-5b0b-43fc-a283-f098fbd3c46b" name="Changes" comment="Завершение реструкторизации файлов системы">
+    <list default="true" id="31ad2b20-5b0b-43fc-a283-f098fbd3c46b" name="Changes" comment="фигня">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2022_14_18_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2022_14_18__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Elements.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Xiao.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Xiao.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/backgrounds/background_for_load.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/backgrounds/background_for_load.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musor.py" beforeDir="false" afterPath="$PROJECT_DIR$/musor.py" afterDir="false" />
     </list>
@@ -46,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -57,7 +62,7 @@
       <recent name="C:\Users\leggo\PycharmProjects\PROJECT H" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.musor">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PROJECT H" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.musor" />
         <item itemvalue="Python.Main (1)" />
+        <item itemvalue="Python.musor" />
         <item itemvalue="Python.Game" />
       </list>
     </recent_temporary>
@@ -166,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647444169604</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="фигня">
+      <created>1647978033576</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647978033577</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,17 +194,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Завершение реструкторизации файлов системы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Завершение реструкторизации файлов системы" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/GameEffects.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="фигня" />
+    <option name="LAST_COMMIT_MESSAGE" value="фигня" />
   </component>
 </project>
