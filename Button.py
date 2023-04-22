@@ -22,9 +22,8 @@ class Button:  # класс для кнопок
         if self.glow:
             self.glow.set_alpha(self.glow_transparency)
 
-    def draw(self, x, y, size=32):
+    def draw(self, click, size=32):
         mouse = pygame.mouse.get_pos()
-        click = pygame.mouse.get_pressed()
 
         if self.x < mouse[0] < self.x + self.width and self.y < mouse[1] < self.y + self.height:
             image = self.image[self.ind_image // self.count_img]
@@ -47,4 +46,4 @@ class Button:  # класс для кнопок
         if self.glow:
             display.blit(self.glow, (self.x, self.y))
         display.blit(image, (self.x, self.y))
-        drawing_text(self.text, (x, y), (0, 0, 0), size)
+        drawing_text(self.text, (0, 0, 0), size)

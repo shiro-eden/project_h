@@ -1,11 +1,10 @@
 import pygame
-from GameParameter import clock, fps, display
-from GameEffects import drawing_text, load_image, AnimatedSprite
-
+from GameParameter import display
+from GameEffects import drawing_text, load_image
 
 BASE_EL_HEIGHT = 520
 WIDTH_INVENTORY = 900
-WIDTH_ELEMENTS, HEIGHT_ELEMENTS = 120, 200
+WIDTH_ELEMENTS, HEIGHT_ELEMENTS = 140, 200
 X_INVENTORY = 100
 
 
@@ -15,8 +14,8 @@ class Inventory:
         self.inventory = []
         self.max_size = max_size
         self.index_selected_element = None
-        for i in range(3):
-            self.add_element(ChemicalElements('natrium', "Натрий", 3, 1, 11, 23, True))
+        for el in ELEMENTS.values():
+            self.add_element(el(1))
 
     def add_element(self, element):
         if self.max_size == len(self.inventory):
@@ -52,10 +51,9 @@ class Inventory:
             element.y = 800
 
 class ChemicalElements:  # hos - high oxidation state или высшая степень окисления
-    def __init__(self, name_image, name, period, group, nc_number, nc_mass, met=False, hos=False):
-        self.image = load_image(f'elements/{name_image}.png')
-        self.image_cube = load_image(f'elements/{name_image}_cube.png')
-        self.background = pygame.Surface((WIDTH_ELEMENTS, HEIGHT_ELEMENTS))  # = load_image(image)
+    def __init__(self, name_image, name, period, group, nc_number, nc_mass, index, met, hos):
+        self.image = None  # поменять на name_image
+        self.background = load_image('elements/card.png')
         self.x, self.y = 150, 300
         self.width, self.height = WIDTH_ELEMENTS, HEIGHT_ELEMENTS
         self.selected = False
@@ -72,14 +70,31 @@ class ChemicalElements:  # hos - high oxidation state или высшая сте
         else:
             self.hos = group
 
+        self.index = index
+        self.draw_index()
+
     def change_position(self, x):
         self.x = x
 
     def is_selected(self):
         return self.selected
 
-    def get_cube_image(self):
-        return self.image_cube
+    def get_image(self):
+        return self.image
+
+    def update_value(self, value):
+        if 0 < value < 10:
+            self.index = value
+            self.draw_index()
+
+    def draw_index(self):
+        self.image = drawing_text(self.name, pygame.Color('white'), font_size=65)
+        if self.index != 1:
+            ind = drawing_text(str(self.index), pygame.Color('white'), font_size=20)
+            img = pygame.Surface((self.image.get_width() + ind.get_width(), self.image.get_height()), pygame.SRCALPHA)
+            img.blit(self.image, (0, 0))
+            img.blit(ind, (self.image.get_width(), self.image.get_height() - ind.get_height()))
+            self.image = img
 
     def render(self):
         mouse = pygame.mouse.get_pos()
@@ -92,5 +107,97 @@ class ChemicalElements:  # hos - high oxidation state или высшая сте
             self.y -= 30
         elif self.y < BASE_EL_HEIGHT:
             self.y = BASE_EL_HEIGHT
+        x, y = self.image.get_size()
+        x, y = (WIDTH_ELEMENTS - x) // 2, (HEIGHT_ELEMENTS - y) // 2
         display.blit(self.background, (self.x, self.y))
-        display.blit(self.image, (self.x, self.y))
+        display.blit(self.image, (self.x + x - 5, self.y + y))
+
+
+class Natrium(ChemicalElements):
+    def __init__(self, index):
+        name_image = "Natrium"
+        name = "Na"
+        period = 3
+        group = 1
+        nc_number = 11
+        nc_mass = 23
+        met = True
+        super().__init__(name_image, name, period, group, nc_number, nc_mass, index, met, False)
+
+class Bromum(ChemicalElements):
+    def __init__(self, index):
+        name_image = "Bromum"
+        name = "Br"
+        period = 4
+        group = 17
+        nc_number = 35
+        nc_mass = 80
+        met = False
+        super().__init__(name_image, name, period, group, nc_number, nc_mass, index, met, False)
+
+
+class Nitrogenium(ChemicalElements):
+    def __init__(self, index):
+        name_image = "Nitrogenium"
+        name = "N"
+        period = 2
+        group = 15
+        nc_number = 7
+        nc_mass = 14
+        met = False
+        super().__init__(name_image, name, period, group, nc_number, nc_mass, index, met, False)
+
+
+class Lithium(ChemicalElements):
+    def __init__(self, index):
+        name_image = "Lithium"
+        name = "Li"
+        period = 2
+        group = 1
+        nc_number = 3
+        nc_mass = 7
+        met = True
+        super().__init__(name_image, name, period, group, nc_number, nc_mass, index, met, False)
+
+
+class Hydrogenium(ChemicalElements):
+    def __init__(self, index):
+        name_image = "Hydrogenium"
+        name = "H"
+        period = 1
+        group = 1
+        nc_number = 1
+        nc_mass = 1
+        met = False
+        super().__init__(name_image, name, period, group, nc_number, nc_mass, index, met, False)
+
+
+class Oxygenium(ChemicalElements):
+    def __init__(self, index):
+        name_image = "Oxygenium"
+        name = "O"
+        period = 2
+        group = 16
+        nc_number = 8
+        nc_mass = 16
+        met = False
+        super().__init__(name_image, name, period, group, nc_number, nc_mass, index, met, False)
+
+class Aluminium(ChemicalElements):
+    def __init__(self, index):
+        name_image = "Aluminium"
+        name = "Al"
+        period = 3
+        group = 13
+        nc_number = 8
+        nc_mass = 13
+        met = True
+        super().__init__(name_image, name, period, group, nc_number, nc_mass, index, met, False)
+
+
+ELEMENTS = {"N": Nitrogenium,
+            "Li": Lithium,
+            "H": Hydrogenium,
+            "O": Oxygenium,
+            "Al": Aluminium,
+            "Br": Bromum}

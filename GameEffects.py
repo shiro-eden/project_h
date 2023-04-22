@@ -17,17 +17,18 @@ def load_fonts(font_type):  # загрузка шрифта
 fonts = {'corp_round_v1.ttf': load_fonts('corp_round_v1.ttf'),
          'martfutomaru.ttf': load_fonts('martfutomaru.ttf'),
          'rizumu.ttf': load_fonts('rizumu.ttf'),
+         'elements.ttf': load_fonts('elements.ttf'),
+         'elements_v2.ttf': load_fonts('elements_v2.ttf'),
          None: None}
 
 
-def drawing_text(text, cords, font_color=pygame.Color('black'), font_size=30,
-                 font_type='rizumu.ttf', bold=False, italic=False):
+def drawing_text(text, font_color=pygame.Color('black'), font_size=30,
+                 font_type='elements_v2.ttf', bold=False, italic=False):
     # функция для отрисовки текста, также возвращает surface с текстом
     font_type = pygame.font.Font(fonts[font_type], font_size)
     font_type.set_bold(bold)
     font_type.set_italic(italic)
     text = font_type.render(text, True, font_color)
-    display.blit(text, cords)
     return text
 
 
@@ -53,62 +54,3 @@ def load_music(filename):  # функция загрузки музыки
         print(f"Файл с музыкой '{fullname}' не найден")
         sys.exit()
     return fullname
-
-
-class AnimationTransition:  # класс для перехода между экранами
-
-    transition_img = [load_image(f'transition/frame_transition_{i}.png') for i in range(36)]
-
-    def __init__(self):
-        self.transition_back = False
-        self.frame = -1  # текущий кадр
-        self.background = None
-
-    def get_frame(self):
-        return self.frame
-
-    def get_transition(self):
-        return self.transition_back
-
-    def reverse(self):
-        # смена направления перехода
-        self.transition_back = not self.transition_back
-
-    def render(self):  # анимация перехода между экранами
-        if self.background:
-            display.blit(self.background, (0, 0))
-        if self.transition_back:
-            self.frame -= 1
-            img = pygame.transform.flip(AnimationTransition.transition_img[self.frame], True, False)
-            if self.frame == 0:
-                self.frame = -1
-                self.reverse()
-        else:
-            self.frame += 1
-            img = AnimationTransition.transition_img[self.frame]
-            if self.frame == 35:
-                self.reverse()
-        display.blit(img, (0, 0))
-
-
-class AnimatedSprite(pygame.sprite.Sprite):  # класс анимированного спрайта
-    def __init__(self, name, count_img, x, y, update_frame, reverse=False):
-        super().__init__()
-        self.frames = [load_image(f'{name}_{i}.png') for i in range(count_img)]
-        self.cur_frame = 0
-        self.image = self.frames[self.cur_frame]
-        self.rect = self.image.get_rect()
-        self.rect = self.rect.move(x, y)
-
-        self.reverse = reverse
-        self.k = update_frame / 60
-
-    def update(self):
-        if self.reverse:
-            self.cur_frame += self.k
-            if self.cur_frame > len(self.frames) - 0.8 or self.cur_frame < 0:
-                self.k *= -1
-        else:
-            self.cur_frame = (self.cur_frame + self.k) % len(self.frames)
-        self.image = self.frames[int(self.cur_frame)]
-        display.blit(self.image, (self.rect.x, self.rect.y))
